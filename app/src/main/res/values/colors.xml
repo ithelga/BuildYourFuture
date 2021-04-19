@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D7F7D52B</color>
+    <color name="colorPrimaryDark">#EEC4A02A</color>
+    <color name="colorDark">#0E0D0D</color>
+    <color name="colorAccent">#FFEE246A </color>
+    <color name="colorState">#D5E42B6A </color>
+
+
+    <color name="colorStatys">#FF8B2F48</color>
+    <color name="colorWindow">#FFFCFCFC </color>
+
+
+    <color name="colorStatLast">#FF55555C</color>
+    <color name="colorLast">#D8AFAAAA </color>
+
+
+
+</resources>

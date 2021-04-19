@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/Rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="70dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textBegin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:shadowColor="#222224"
+            android:text="Давайте формировать свою будущую пенсию прямо сейчас!"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/next0"
+            android:text="@string/text_start"
+            android:textColor="#D7F7D52B"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_above="@+id/next"
+            android:layout_below="@+id/textBegin"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            app:srcCompat="@drawable/icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="70dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/step"
+            android:padding="16dp"
+            android:shadowColor="#D7CCAE30"
+            android:text="Шаг 2"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center1"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:text="Укажите Ваш возраст"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center1"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:hint="25"
+            android:inputType="number"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/center1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/next1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/next"
+            android:text="@string/text_next"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="70dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center2"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:text="Укажите Ваш пол"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center2"
+            android:layout_marginTop="0dp">
+
+
+            <RadioButton
+                android:id="@+id/radioButtonHe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                android:text="Мужской"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radioButtonShe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Женский"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/next2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/next"
+            android:text="@string/text_next"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/step"
+            android:padding="16dp"
+            android:text="Шаг 1"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/center2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="70dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center3"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:text="Укажите текущего страховщика"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editInsurer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center3"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:hint="РГС НПФ"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/next3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/next"
+            android:text="@string/text_next"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/center3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/step"
+            android:padding="16dp"
+            android:text="Шаг 3"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="70dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/step"
+            android:padding="16dp"
+            android:text="Шаг 4"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center4"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:text="Укажите страховой стаж"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center4"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="0dp"
+            android:ems="10"
+            android:hint="5 (лет)"
+            android:inputType="number"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/next4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/next"
+            android:text="@string/text_next"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/center4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="70dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/step"
+            android:padding="16dp"
+            android:text="Шаг 5"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center5"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:text="Ваши индивидуальные пенсионные коэффициенты"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editIpc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center5"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="128dp"
+            android:ems="10"
+            android:hint="4.487"
+            android:inputType="numberDecimal"
+            android:singleLine="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/next5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/next"
+            android:text="@string/text_next"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/center5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="70dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/step"
+            android:padding="16dp"
+            android:text="Шаг 6"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center6"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:text="Ваши пенсионные накопления"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editStorage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center6"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:ems="10"
+            android:hint="2168.22"
+            android:inputType="numberDecimal"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/next6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/next"
+            android:text="@string/text_next"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/center6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/radioGroupFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonFood1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сохраняете небольшую сумму денег за счет приготовления пищи из продуктов питания с длительным сроком хранения. Два раза в месяц посетите местное кафе.\n"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFood2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Готовите дома из свежих ингредиентов, иногда забегая в кафе.\n"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFood3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="В домашних условиях готовите полезные блюда. Два раза в месяц вы сможете поесть в ресторане, а также посетить несколько кафе.\n"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFood4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Питаетесь здоровыми домашними блюдами. Наслаждаетесь еженедельными походами в ресторан.\n"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFood5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Вы можете себе позволить заказывать здоровую еду на дом, питаться в хороших ресторанах.\n"
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="ЕДА"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Выберите для себя один вариант"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/next8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/next2"
+            android:text="@string/text_next"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:shadowColor="#BB294E"
+            android:text="ДОМ И СЧЕТА"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Выберите для себя один вариант"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/next9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/next2"
+            android:text="@string/text_next"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupHouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonHouse1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='Смотрите широкополосное телевидение в однокомнатной квартире. Пользуйтесь мобильным телефоном с тарифом "сначала говори - потом плати".\n' />
+
+            <RadioButton
+                android:id="@+id/radioButtonHouse2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Наслаждаетесь базовым широкополосным доступом в интернет и телевидение, не пропуская оплату счетов за двухкомнатную квартиру. Остаетесь на связи с безлимитным тарифом. \n" />
+
+            <RadioButton
+                android:id="@+id/radioButtonHouse3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пользуетесь быстрым интернетом с волоконно-оптической широкополосной связью. Оплачиваете вовремя счета за двуспальную квартиру. Пользуетесь контрактным мобильным телефоном.\n" />
+
+            <RadioButton
+                android:id="@+id/radioButtonHouse4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Используете различные технические устройства в вашей трехкомнатной квартире с широкополосным пакетом и другими предметами роскоши. Связываетесь через контрактный мобильный телефон.\n" />
+
+            <RadioButton
+                android:id="@+id/radioButtonHouse5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Находитесь в курсе всех последних тенденций, наслаждаясь спутниковым телевидением и последним смартфоном в собственном доме. Оформляете дополнительный страховой полис для дома и членов семьи.\n" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="16dp"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="СЕМЬЯ"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Выберите для себя один вариант"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/next10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/next2"
+            android:text="@string/text_next"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonFamily1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Проводите время со своими близкими дома или в парке, также время от времени посещаете с ними кафе. Вы не сможете отложить большую часть своего дохода на черный день, зато сможете купить хорошие подарки всем членам семьи.\n" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFamily2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Проводите ваш семейный отдых в музеях и парках. Вы сможете немного начать откладывать. \n" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFamily3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Отводите своих близких на премьеру фильма или на последнюю выставку, а затем обсуждаете это за чашечкой кофе. Регулярно откладываете немного своего дохода.\n" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFamily4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Балуете своих близких веселыми выходными в кинотеатрах, торговых центрах, парках развлечений и завершаете все это вкусным ужином в ресторане. Откладываете разумную часть своего ежемесячного дохода.\n" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFamily5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Наслаждаетесь выходными, не пропускайте последние выставки, совершаете однодневные поездки в свободное время. Вы также сможете отложить разумную сумму своего ежемесячного дохода. \n" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="ПУТЕШЕСТВИЕ"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Выберите для себя один вариант"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/next11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/next2"
+            android:text="@string/text_next"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTravel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonTravel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Путешествуете внутри страны. Заказываете автобусную экскурсию по золотому кольцу или экскурсии по местным достопримечательностям. \n  " />
+
+            <RadioButton
+                android:id="@+id/radioButtonTrave2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Путешествуете внутри страны или берете одну бюджетную путевку заграницу. Вы можете позволить себе среднеразмерный автомобиль.\n" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTravel3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Берете отпуск один раз в год. Передвигаетесь на автомобиле среднего класса и меняете его каждые пять лет.\n" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTravel4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Отдыхаете заграницей один или два раза в год. Вы можете позволить менять свой автомобиль каждые пять лет. \n" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTravel5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Смотрите на мир с длительными ежегодными отпусками. Садитесь за руль автомобиля премиум класса и меняете его каждые три года.\n" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="16dp"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="ХОББИ"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Выберите для себя один вариант"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/next12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/next2"
+            android:text="@string/text_next"
+            android:textSize="18sp" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupHobbi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonHobbi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Читаeте книги или смотрите телевизор. Держите себя в форме, выходя на утренние пробежки. Стимулируeте свою мозговую деятельность с помощью документальных фильмов или головоломок.\n" />
+
+            <RadioButton
+                android:id="@+id/radioButtonHobbi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Находите себе тихое хобби, занимаясь садоводством на дачном участке или приготовлением кулинарных шедевров. Возьмете абонемент в бюджетный тренажерный зал для поддержания своего физического состояния.\n" />
+
+            <RadioButton
+                android:id="@+id/radioButtonHobbi3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Позволяете себе осваивать различные виды хобби. Начинаете что-нибудь мастерить и пробуете сделать это дополнительным источником дохода.\n" />
+
+            <RadioButton
+                android:id="@+id/radioButtonHobbi4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Продолжаете осваивать новые языки, изучать новые музыкальные инструменты. Держите себя в форме вместе с йогой или присоединяйтесь к шикарному тренажёрному залу.\n" />
+
+            <RadioButton
+                android:id="@+id/radioButtonHobbi5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Проводите свое время, предаваясь любимым занятиям, таким как танцы, фотография или игра в большой теннис.\n" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="16dp"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/resLast2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/next2"
+            android:gravity="center"
+            android:padding="8dp"
+            android:shadowColor="#D8AFAAAA"
+            android:text="Желаемый \nобъем расходов"
+            android:textColorHint="#D81B60"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center15"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/next"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Предполагаемый \nобъем доходов"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="Сравните выбранную Вами стоимость месяца на пенсии и предполагаемый пенсионный доход"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/center15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/next14"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/next14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/next0"
+            android:padding="8dp"
+            android:text="Что вы можете сделать сейчас?"
+            android:textColor="#D7F7D52B"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/resLast2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center15"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="36dp"
+            android:gravity="center"
+            android:textColor="#FF222224"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resLast1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView28"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textColor="#FF222224"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout14"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="16dp"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center|center_horizontal"
+            android:text="Воспользуйтесь советами для наращивания пенсионного дохода"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/next15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/next0"
+            android:text="Повторить"
+            android:textColor="#D7F7D52B"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/next"
+            android:padding="16dp"
+            android:text="1) Начните формировать свою частную пенсию\n
+            \n2) Воспользуйтесь робоэдвайзингом для выбора управляющей компании в рамках ОПС\n
+            \n3) Проверьте, участвует ли Ваш работодатель в корпоративных пенсионных схемах\n"
+            android:textColor="#000000"
+            android:textColorHighlight="#C23662"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="70dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/step"
+            android:padding="16dp"
+            android:text="Шаг 7"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center16"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:text="Сколько лет Вы еще планируете работать до выхода на пенсию?"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editYears"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center16"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:hint="7"
+            android:inputType="number"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/next16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/next"
+            android:text="@string/text_next"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/center16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+
+<!--    -->
